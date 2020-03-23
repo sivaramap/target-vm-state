@@ -5,10 +5,7 @@ provider "google" {
   region  = "us-east1"
   
 }
-resource "google_service_account" "service_account" {
-  account_id   = "124228179284-compute@developer.gserviceaccount.com"
-  
-  }
+
 
 resource "google_compute_instance" "vm-instance" {
   name         = "test"
