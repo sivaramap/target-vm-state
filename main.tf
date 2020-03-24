@@ -18,7 +18,7 @@ resource "google_compute_instance" "vm-instance" {
     }
   }
 
-  metadata_startup_script = "${file("./startup.sh")}"
+  metadata_startup_script = file("startup.sh")
    
   network_interface {
     network = "default"
