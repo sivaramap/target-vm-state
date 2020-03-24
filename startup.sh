@@ -6,8 +6,8 @@ wget https://releases.hashicorp.com/terraform/0.12.0/terraform_0.12.0_linux_amd6
 unzip terraform_0.12.0_linux_amd64.zip 
 sudo mv terraform /usr/local/bin/ 
 terraform --version 
-git clone https://github.com/ishaqmdgcp/gce-startup.git
-cd /gce-startup 
-terraform init
-terraform plan
-terraform apply -input=false -auto-approve"
+#git clone https://github.com/ishaqmdgcp/gce-startup.git
+#cd /gce-startup 
+#terraform init
+#terraform plan
+#terraform apply -input=false -auto-approve"
