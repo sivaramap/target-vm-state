@@ -1,16 +1,15 @@
 # This is the provider used to spin up the gcloud instance
 provider "google" {
-  #credentials = file("terraform.json")
-  project = "ishaqgcpproject"
+  credentials = file("terraform-cred.json")
+  project = "mytraining-gcptech"
   region  = "us-central1"
   
 }
 
-
 resource "google_compute_instance" "vm-instance" {
   name         = "tmp-vm"
   machine_type = "f1-micro"
-  zone         = "us-central1-c"
+  zone         = "us-central1-a"
 
   boot_disk {
     initialize_params {
